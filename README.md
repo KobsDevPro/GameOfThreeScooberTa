@@ -9,23 +9,39 @@ For each "move", a sufficient output should get generated (mandatory: the added,
 
 Both players should be able to play automatically without user input. One of the players should optionally be adjustable by a user.
 
-Solution:  
+**Solution**:  
    
-Technology -  
-Java 11
-Spring Boot
-Maven
-Swagger
+**Technology** -  
 
-This Game is designed with Spring boot REST API,JMS for the communication between two players. The architecture is simple and the steps to execute are following -
-Get the project from Git
-Open Cmd in target folder
-Run these commands -
-java -jar GameOfThreeScoober-0.0.1-SNAPSHOT.jar
-java -jar GameOfThreeScoober-0.0.1-SNAPSHOT.jar —spring.config.name=application_2
-Open Postman and run the following URL
-http://localhost:8080/api/gameofthree/start/true -GET request
-http://localhost:8080/api/gameofthree/play/	 -POST request
-Json - { "number":56}
+   - Java 11
 
-Now check the output in command Prompt open in Step #1, #2.
+   - Spring Boot
+
+   - Maven
+
+   - Swagger
+
+This Game is designed with Spring boot REST API for the communication. The architecture is simple and the steps to execute are following -
+- Get the project from Git
+- Open Cmd in target folder and Run these commands 
+
+   - java -jar GameOfThreeScoober-0.0.1-SNAPSHOT.jar
+
+   - java -jar GameOfThreeScoober-0.0.1-SNAPSHOT.jar —spring.config.name=application_2
+
+- Open Postman and run the following URL
+
+   - http://localhost:8080/got/init/true - GET request
+
+   - http://localhost:8080/got/playgame - POST request
+         Json - { "number":56}
+
+- Now check the output in command Prompt open in Step #1, #2.
+
+**API Documentation Deatils**
+   - See this URL for details
+   
+      1. http://localhost:8080/got/swagger-ui.html
+      
+      2. http://localhost:9000/got/swagger-ui.htm
+   
