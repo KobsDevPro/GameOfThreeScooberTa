@@ -1,0 +1,4 @@
+com/got/games/GameOfThreeScooberApplication.class
+com/got/games/controller/GameController.class
+com/got/games/model/Player.class
+com/got/games/service/GameService.class
